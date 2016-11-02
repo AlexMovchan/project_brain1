@@ -159,6 +159,7 @@ main {
     background-color: #f6f3ec;
     width: inherit;
     height: 440px;
+    overflow: hidden;
     .text_banner {
         width: 342px;
         height: 300px;
@@ -184,6 +185,52 @@ main {
     .woman_banner {
         float: right;
         margin-right: 115px;
+    }
+}
+.info_pannel {
+    width: 1200px;
+    height: 55px;
+    background-color: #ededed;
+    clear: both;
+    .left_pannel {
+        width: 240px;
+        height: inherit;
+        float: left;
+        overflow: hidden;
+        margin-left: 115px;
+        padding: 7px 0;
+        color: #5a5a5a;
+        img {
+            position: relative;
+            top: 7px;
+            &:hover {
+                transform: scale(1.1)
+            }
+        }
+    }
+    
+    .right_pannel {
+        width: 260px;
+        height: inherit;
+        float: right;
+        margin-right: 115px;
+        span {
+            display: block;
+            float: left;
+            padding: 16px;
+            color: #5a5a5a;
+        }
+        a {
+            display: block;
+            height: inherit;
+            float: right;
+            &:hover {
+                background-color: #bcbcbc;
+            }
+            img {
+                padding: 16px;
+            }
+        }
     }
 }
 
