@@ -155,6 +155,7 @@ body {
 main {
     width: 1200px;
 }
+
 .banner {
     background-color: #f6f3ec;
     width: inherit;
@@ -188,6 +189,7 @@ main {
     }
 }
 .info_pannel {
+    margin-top: 75px;
     width: 1200px;
     height: 55px;
     background-color: #ededed;
@@ -200,6 +202,9 @@ main {
         margin-left: 115px;
         padding: 7px 0;
         color: #5a5a5a;
+        input {
+            width: 100px;
+        }
         img {
             position: relative;
             top: 7px;
@@ -234,3 +239,82 @@ main {
     }
 }
 
+/* =============slider ===============*/
+.wrap {
+    height: 440px;
+    width: 1200px;
+    position:relative;
+    > input {
+        display:none;
+    }
+    .control {
+        position:absolute;
+        margin-top: 25px;
+        margin-left:-50px;
+        left:50%;
+        z-index: 2;
+    }
+    label {
+        cursor:pointer;
+        display:inline-block;
+        height:8px;
+        margin:10px;
+        position:relative;
+        width:8px;
+        border-radius:50%;
+    }
+    label:after {
+        border:2px solid #0a0a0a;
+        content:" ";
+        display:block;
+        height:12px;
+        left:-4px;
+        position:absolute;
+        top:-4px;
+        width:12px;
+        border-radius:50%;
+    }
+}
+.slider {
+    background-color:#333333;
+    height:inherit;
+    overflow:hidden;
+    position:relative;
+    width:inherit;
+}
+.slides {
+    height:inherit;
+    opacity:0;
+    position:absolute;
+    width:inherit;
+    z-index:0;
+    transition:1s;
+    transform:rotate(55deg);
+}
+.img1 {background-image:url(../img/1462020165_90eb80887109.jpg);}
+.img2 {background-image:url(../img/159058889.jpg);}
+.img3 {background-image:url(../img/547.jpg);}
+
+#point1:checked ~ .control label:nth-of-type(1), 
+#point2:checked ~ .control label:nth-of-type(2), 
+#point3:checked ~ .control label:nth-of-type(3) {
+  background:#000000;
+}
+
+#point1:checked ~ .slider > .img1, 
+#point2:checked ~ .slider > .img2, 
+#point3:checked ~ .slider > .img3 {
+  opacity:1;
+  z-index:1;
+  transform:none;
+}
+
+/* ============contemt========= */
+
+.content {
+    width: 1200px;
+    .pic1 {
+        width: 970px;
+        margin: auto;
+    }
+}
