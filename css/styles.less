@@ -132,22 +132,36 @@ body {
             }
         }
     }
+    
+    .block {
+        float: left;
+    }
     .navigation_btn {
         float: right;
         height: 50px;
-        margin: 25px 15px;
-        .first_list {
+        margin: 25px 150px;
+        position: relative;
+        z-index: 10;
+        .list {
             display: block;
-            width: 100px;
+            clear: both;
+            padding: 10px;
             &:hover {
                 li {
                     display: block;
+                    background-color: grey;
+                    padding: 0 3px 10px;
+                    text-align: center;
+                    a {
+                        text-decoration: none;
+                        color: inherit;
+                    }
                 }
             }
             li {
                 display: none;
             }
-            .first {
+            .current {
                 display: block;
             }
         }
@@ -190,57 +204,6 @@ main {
     .woman_banner {
         float: right;
         margin-right: 115px;
-    }
-}
-.info_pannel {
-    margin-top: 75px;
-    width: 1200px;
-    height: 55px;
-    background-color: #ededed;
-    clear: both;
-    .left_pannel {
-        width: 240px;
-        height: inherit;
-        float: left;
-        overflow: hidden;
-        margin-left: 115px;
-        padding: 0;
-        color: @text_color;
-        input {
-            width: 100px;
-            margin-top: 15px;
-        }
-        img {
-            position: relative;
-            top: 7px;
-            &:hover {
-                transform: scale(1.1)
-            }
-        }
-    }
-    
-    .right_pannel {
-        width: 260px;
-        height: inherit;
-        float: right;
-        margin-right: 115px;
-        span {
-            display: block;
-            float: left;
-            padding: 16px;
-            color: @text_color;
-        }
-        a {
-            display: block;
-            height: inherit;
-            float: right;
-            &:hover {
-                background-color: #bcbcbc;
-            }
-            img {
-                padding: 16px;
-            }
-        }
     }
 }
 
@@ -317,7 +280,77 @@ main {
   transform:none;
 }
 
-/* ============contemt========= */
+/* ============content========= */
+.info_pannel {
+    margin-top: 75px;
+    width: 1200px;
+    height: 55px;
+    background-color: #ededed;
+    clear: both;
+    .left_pannel {
+        width: 240px;
+        height: inherit;
+        float: left;
+        overflow: hidden;
+        margin-left: 115px;
+        padding: 0;
+        color: @text_color;
+        input {
+            width: 100px;
+            margin-top: 15px;
+        }
+        img {
+            position: relative;
+            top: 7px;
+            &:hover {
+                transform: scale(1.1)
+            }
+        }
+    }
+    
+    .right_pannel {
+        width: 280px;
+        height: inherit;
+        float: right;
+        margin-right: 115px;
+        .social {
+            width: 55px;
+            height: 55px;
+            float: right;
+            background-size: 100%;
+            a {
+                display: block;
+                height: inherit;
+                width: inherit;
+                float: right;
+            }
+        }
+        .pin {
+            background-image: url(../img/main/drib.png);
+            &:hover {
+                    background-color: #bcbcbc;
+                }
+        }
+        .twitter {
+            background-image: url(../img/main/twitter.png);
+            &:hover {
+                    background-color: #bcbcbc;
+                }
+        }
+        .fb {
+            background-image: url(../img/main/fb.png);
+            &:hover {
+                    background-color: #bcbcbc;
+                }
+        }
+        span {
+            display: block;
+            float: left;
+            padding: 16px;
+            color: @text_color;
+        }
+    }
+}
 
 .content {
     width: 1200px;
