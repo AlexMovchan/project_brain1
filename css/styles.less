@@ -136,19 +136,22 @@ body {
         float: right;
         height: 50px;
         margin: 25px 15px;
-        a {
+        .first_list {
             display: block;
-            float: left;
-            text-decoration: none;
-            color: black;
-            padding: 0 10px;
+            width: 100px;
             &:hover {
-                background-color: #b4b4b4;
+                li {
+                    display: block;
+                }
             }
-            img {
-                padding: 3px 5px;
+            li {
+                display: none;
+            }
+            .first {
+                display: block;
             }
         }
+        
     }
     
 }
