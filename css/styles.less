@@ -492,7 +492,7 @@ main {
                 float: left;
                 width: 220px;
                 margin: 0 10px;
-                background-color: white;
+                background-color: #ededed;
                 transition: 1s;
                 &:hover {
                 transform: scale(1.1)
@@ -558,6 +558,45 @@ main {
             .brand6 {background-image: url(../img/main/content/brand6.png)};
             .brand7 {background-image: url(../img/main/content/brand7.png)};
             .brand8 {background-image: url(../img/main/content/brand8.png)};
+        }
+    }
+    .group4 {
+        width: 1200px;
+        height: 140px;
+        margin: 20px 0;
+        .container_group4 {
+            width: 1000px;
+            height: inherit;
+            margin: auto;
+            h2, p {
+                text-align: center;
+                color: @text_color;
+            }
+        }
+    }
+    
+}
+
+footer {
+    width: 1200px;
+    background-color: #ededed;
+    .visit_cards_pannel {
+        width: 600px;
+        height: 55px;
+        margin: auto;
+        .card_text {
+            float: left;
+            margin: 15px 0;
+            color: @text_color;
+        }
+        .card_visit {
+            width: 500px;
+            height: 25px;
+            float: left;
+            margin: 15px 10px;
+            background-image: url(../img/footer/visit.png);
+            background-repeat: no-repeat;
+            background-position: center;
         }
     }
 }
