@@ -643,7 +643,7 @@ footer {
                         text-decoration: none;
                         color: @text_color;
                         &:hover {
-                            color: white;
+                            color: black;
                         }
                     }
                 }
@@ -668,6 +668,11 @@ footer {
                 height: 35px;
                 background-image: url(../img/footer/sprite_social.png);
                 overflow: hidden;
+                a {
+                    display: block;
+                    width: inherit;
+                    height: inherit;
+                }
             }
             .twitter {
                 background-position: 0 0;
@@ -678,7 +683,23 @@ footer {
                 float: left;
             }
             .fb {
-                background-position: -88px 0;
+                background-position: -89px 0;
+                float: left
+            }
+            
+            .google {
+                clear: both;
+                background-position: 0 -42px;
+                float: left;
+            }
+            
+            .t {
+                background-position: -44px -42px;
+                float: left;
+            }
+            
+            .v {
+                background-position: -89px -42px;
                 float: left;
             }
         }
@@ -694,5 +715,35 @@ footer {
             }
         }
         
+    }
+    .footer_end {
+        background-color: black;
+        height: 70px;
+        .footer_end_base {
+            width: @base_container;
+            margin: auto;
+            .footer_end_container_left {
+                float: left;
+                .links {
+                    float: left;
+                    margin: 25px 5px;
+                    font-size: 12px;
+                    a {
+                        color: @text_color;
+                        text-decoration: none;
+                        &:hover {
+                            color: white;
+                        }
+                    }
+                }
+            }
+            .footer_end_container_right {
+                float: right;
+                p {
+                    color: @text_color;
+                    font-size: 12px;
+                }
+            }
+        }
     }
 }
