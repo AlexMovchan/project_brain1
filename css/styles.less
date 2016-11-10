@@ -1,211 +1,224 @@
 @text_color: #5a5a5a;
+@base_container: 1200px;
 body {
     margin: 0;
     padding: 0;
 }
 /* ================================= header ==============*/
-.head_line {
-    width: 1200px;
-    height: 30px;
+header {
+    width: 100%;
     background-color: black;
-    li {
-        color: white;
-    }
-    .custom_care{
-        height: inherit;
-        margin: 0 0 0 115px;
-        float: left;
-        font-size: 12px;
-        font-family: "Arial";
-        text-transform: uppercase;
-        color: rgb(255, 255, 255);
-        p {
-            padding: 7px 0;
-            margin: 0;
-        }
-    }
-    .head_btn {
-        height: inherit;
-        float: right;
-        margin: 0 115px 0 0;
-        padding: 0;
-        p {
-            padding: 7px 0;
-            margin: 0;
-        }
-        a {
-            text-decoration: none;
-            font-size: 12px;
-            font-family: "Arial";
-            text-transform: uppercase;
-            color: rgb(255, 255, 255);
-            padding: 0;
-            display: block;
-            height: inherit;
-        }
-        .head_btn1 {
-            height: 28px;
-            width: 70px;
-            text-align: center;
-            float: left;
-            border: solid 1px;
-            border-left-color: #909090;
-            &:hover {
-                background-color: #818181;
-                border-left-color: #818181;
-                border-right-color: #818181;
-             }
-            img {
-                margin-left: 7px;
+    .base1 {
+        margin: auto;
+        width: @base_container;
+        height: 30px;
+        background-color: black;
+        .base_cont {
+            max-width: 970px;
+            margin: auto;
+            overflow: hidden;
+            li {
+                color: white;
             }
-        }
-        .head_btn2 {
-            height: 28px;
-            width: 130px;
-            text-align: center;
-            float: left;
-            display: block;
-            border: solid 1px;
-            border-left-color: #909090;
-            border-right-color: #909090;
-            &:hover {
-                background-color: #818181;
-                border-left-color: #818181;
-                border-right-color: #818181;
-             }
-            img {
+            .custom_care{
+                height: inherit;
+                margin: 0;
                 float: left;
-                margin-left: 15px;
+                font-size: 12px;
+                font-family: "Arial";
+                text-transform: uppercase;
+                color: rgb(255, 255, 255);
+                p {
+                    padding: 7px 0;
+                    margin: 0;
+                }
             }
-        }
-        .head_btn3 {
-            height: 28px;
-            float: left;
-            border: solid 1px;
-            border-right-color: #909090;
-            &:hover {
-                background-color: #818181;
-                border-left-color: #818181;
-                border-right-color: #818181;
-             }
-            img {
-                padding: 6px 10px;
-            }
-        }
-    }
-}
-
-.head_nav {
-    width: 1200px;
-    height: 100px;
-    .logo {
-        position: relative;
-        top: 35px;
-        left: 115px;
-        float: left;
-    }
-    .card_container {
-        background-color: #fcfcfc;
-        width: 215px;
-        height: 65px;
-        margin: 17px 115px 17px 0;
-        position: relative;
-        float: right;
-        border: solid 1px;
-        border-color: #a5a5a5;
-        .top_card {
-            padding: 3px 4px 8px;
-            a {
-                color: @text_color;
-                text-decoration: none;
-            }
-            img{
+            .head_btn {
+                height: inherit;
                 float: right;
-                padding: 5px;
-            }
-        }
-        .bottom_card {
-            padding: 8px 4px 2px;
-            span {
-                float: right;
-                color: @text_color;
-            }
-        }
-    }
-    
-    .block {
-        float: left;
-    }
-    .navigation_btn {
-        float: right;
-        height: 50px;
-        margin: 25px 150px;
-        position: relative;
-        z-index: 10;
-        .list {
-            display: block;
-            clear: both;
-            padding: 10px;
-            &:hover {
-                li {
+                margin: 0;
+                padding: 0;
+                p {
+                    padding: 7px 0;
+                    margin: 0;
+                }
+                a {
+                    text-decoration: none;
+                    font-size: 12px;
+                    font-family: "Arial";
+                    text-transform: uppercase;
+                    color: rgb(255, 255, 255);
+                    padding: 0;
                     display: block;
-                    background-color: #d1d1d1;
-                    padding: 0 3px 10px;
+                    height: inherit;
+                }
+                .head_btn1 {
+                    height: 28px;
+                    width: 70px;
                     text-align: center;
-                    a {
-                        text-decoration: none;
-                        color: inherit;
+                    float: left;
+                    border: solid 1px;
+                    border-left-color: #909090;
+                    &:hover {
+                        background-color: #818181;
+                        border-left-color: #818181;
+                        border-right-color: #818181;
+                     }
+                    img {
+                        margin-left: 7px;
+                    }
+                }
+                .head_btn2 {
+                    height: 28px;
+                    width: 130px;
+                    text-align: center;
+                    float: left;
+                    display: block;
+                    border: solid 1px;
+                    border-left-color: #909090;
+                    border-right-color: #909090;
+                    &:hover {
+                        background-color: #818181;
+                        border-left-color: #818181;
+                        border-right-color: #818181;
+                     }
+                    img {
+                        float: left;
+                        margin-left: 15px;
+                    }
+                }
+                .head_btn3 {
+                    height: 28px;
+                    float: left;
+                    border: solid 1px;
+                    border-right-color: #909090;
+                    &:hover {
+                        background-color: #818181;
+                        border-left-color: #818181;
+                        border-right-color: #818181;
+                     }
+                    img {
+                        padding: 6px 10px;
                     }
                 }
             }
-            li {
-                display: none;
-            }
-            .current {
-                display: block;
-            }
         }
-        
     }
-    
-}
-/* ================================= header end ==============*/
-main {
-    width: 1200px;
 }
 
-.banner {
-    background-color: #f6f3ec;
-    width: inherit;
-    height: 440px;
-    overflow: hidden;
-    .text_banner {
-        width: 342px;
-        height: 300px;
-        position: relative;
-        left: 180px;
-        top: 70px;
-        overflow: hidden;
-        float: left;
-        p {
-            display: block;
-            margin: auto;
+/* ================================= header end ==============*/
+main {
+    width: 100%;
+    .base2 {
+        width: @base_container;
+        height: 550px;
+        margin: auto;
+        .head_nav {
+            overflow: hidden;
+            .logo {
+                position: relative;
+                top: 35px;
+                left: 115px;
+                float: left;
+            }
+            .card_container {
+                background-color: #fcfcfc;
+                width: 215px;
+                height: 65px;
+                margin: 17px 115px 17px 0;
+                position: relative;
+                float: right;
+                border: solid 1px;
+                border-color: #a5a5a5;
+                .top_card {
+                    padding: 3px 4px 8px;
+                    a {
+                        color: @text_color;
+                        text-decoration: none;
+                    }
+                    img{
+                        float: right;
+                        padding: 5px;
+                    }
+                }
+                .bottom_card {
+                    padding: 8px 4px 2px;
+                    span {
+                        float: right;
+                        color: @text_color;
+                    }
+                }
+            }
+
+            .block {
+                float: left;
+            }
+            .navigation_btn {
+                float: right;
+                height: 50px;
+                margin: 25px 150px;
+                position: relative;
+                z-index: 10;
+                .list {
+                    display: block;
+                    clear: both;
+                    padding: 10px;
+                    &:hover {
+                        li {
+                            display: block;
+                            background-color: #d1d1d1;
+                            padding: 0 3px 10px;
+                            text-align: center;
+                            a {
+                                text-decoration: none;
+                                color: inherit;
+                            }
+                        }
+                    }
+                    li {
+                        display: none;
+                    }
+                    .current {
+                        display: block;
+                    }
+                } 
+            }
         }
-        .btn_banner {
-            background-color: #ffa687;
-            margin: auto;
-            display: block;
-            width: 150px;
-            height: 50px;
-            font-size: 18px;
-            color: white;
+        .banner {
+            background-color: #f6f3ec;
+            width: inherit;
+            height: 440px;
+            overflow: hidden;
+            .text_banner {
+                width: 342px;
+                height: 300px;
+                position: relative;
+                left: 180px;
+                top: 70px;
+                overflow: hidden;
+                float: left;
+                p {
+                    display: block;
+                    margin: auto;
+                }
+                .btn_banner {
+                    background-color: #ffa687;
+                    margin: auto;
+                    display: block;
+                    width: 150px;
+                    height: 50px;
+                    font-size: 18px;
+                    color: white;
+                }
+            }
+            .woman_banner {
+                float: right;
+                margin-right: 115px;
+            }
         }
-    }
-    .woman_banner {
-        float: right;
-        margin-right: 115px;
     }
 }
+
 
 /* =============slider ===============*/
 .wrap {
@@ -281,79 +294,84 @@ main {
 }
 
 /* ============content========= */
-.info_pannel {
-    margin-top: 75px;
-    width: 1200px;
-    height: 55px;
+.base_otline {
+    width: 100%;
     background-color: #ededed;
-    clear: both;
-    .left_pannel {
-        width: 240px;
-        height: inherit;
-        float: left;
-        overflow: hidden;
-        margin-left: 115px;
-        padding: 0;
-        color: @text_color;
-        input {
-            width: 100px;
-            margin-top: 15px;
-        }
-        img {
-            position: relative;
-            top: 7px;
-            &:hover {
-                transform: scale(1.1)
-            }
-        }
-    }
-    
-    .right_pannel {
-        width: 280px;
-        height: inherit;
-        float: right;
-        margin-right: 115px;
-        .social {
-            width: 55px;
-            height: 55px;
-            float: right;
-            background-size: 100%;
-            a {
-                display: block;
-                height: inherit;
-                width: inherit;
-                float: right;
-            }
-        }
-        .pin {
-            background-image: url(../img/main/drib.png);
-            &:hover {
-                    background-color: #bcbcbc;
-                }
-        }
-        .twitter {
-            background-image: url(../img/main/twitter.png);
-            &:hover {
-                    background-color: #bcbcbc;
-                }
-        }
-        .fb {
-            background-image: url(../img/main/fb.png);
-            &:hover {
-                    background-color: #bcbcbc;
-                }
-        }
-        span {
-            display: block;
+    .base3 {
+        margin: 75px auto 0;
+        width: 1200px;
+        height: 55px;
+        background-color: #ededed;
+        clear: both;
+        .left_pannel {
+            width: 240px;
+            height: inherit;
             float: left;
-            padding: 16px;
+            overflow: hidden;
+            margin-left: 115px;
+            padding: 0;
             color: @text_color;
+            input {
+                width: 100px;
+                margin-top: 15px;
+            }
+            img {
+                position: relative;
+                top: 7px;
+                &:hover {
+                    transform: scale(1.1)
+                }
+            }
+        }
+
+        .right_pannel {
+            width: 280px;
+            height: inherit;
+            float: right;
+            margin-right: 115px;
+            .social {
+                width: 55px;
+                height: 55px;
+                float: right;
+                background-size: 100%;
+                a {
+                    display: block;
+                    height: inherit;
+                    width: inherit;
+                    float: right;
+                }
+            }
+            .pin {
+                background-image: url(../img/main/drib.png);
+                &:hover {
+                        background-color: #bcbcbc;
+                    }
+            }
+            .twitter {
+                background-image: url(../img/main/twitter.png);
+                &:hover {
+                        background-color: #bcbcbc;
+                    }
+            }
+            .fb {
+                background-image: url(../img/main/fb.png);
+                &:hover {
+                        background-color: #bcbcbc;
+                    }
+            }
+            span {
+                display: block;
+                float: left;
+                padding: 16px;
+                color: @text_color;
+            }
         }
     }
 }
 
 .content {
     width: 1200px;
+    margin: auto;
     .pic1 {
         width: 970px;
         margin: 40px auto 50px;
@@ -578,25 +596,103 @@ main {
 }
 
 footer {
-    width: 1200px;
     background-color: #ededed;
-    .visit_cards_pannel {
-        width: 600px;
-        height: 55px;
+    .footer_bg1 {
+        background-color: #f7f7f7;
+        .base4 {
+            width: 1200px;
+            margin: auto;
+            .visit_cards_pannel {
+                width: 600px;
+                height: 55px;
+                margin: auto;
+                .card_text {
+                    float: left;
+                    margin: 15px 0;
+                    color: @text_color;
+                }
+                .card_visit {
+                    width: 500px;
+                    height: 25px;
+                    float: left;
+                    margin: 15px 10px;
+                    background-image: url(../img/footer/visit.png);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                }
+            }
+        }
+    }
+    .footer_base5 {
+        width: @base_container;
         margin: auto;
-        .card_text {
+        overflow: hidden;
+        .block_footer {
             float: left;
-            margin: 15px 0;
-            color: @text_color;
+            height: 170px;
+            margin: 0 25px;
+            h3 {
+                color: @text_color;
+            }
+            ul{
+                padding: 0;
+                li {
+                    list-style: none;
+                    font-size: 12px;
+                    a {
+                        text-decoration: none;
+                        color: @text_color;
+                        &:hover {
+                            color: white;
+                        }
+                    }
+                }
+            }
         }
-        .card_visit {
-            width: 500px;
-            height: 25px;
-            float: left;
-            margin: 15px 10px;
-            background-image: url(../img/footer/visit.png);
-            background-repeat: no-repeat;
-            background-position: center;
+        .info_block1 {
+            width: 160px;
         }
+        .info_block2 {
+            width: 140px;
+        }
+        .info_block3 {
+            width: 140px;
+        }
+        .info_block4 {
+            width: 140px;
+        }
+        .info_block5 {
+            width: 140px;
+            .social {
+                width: 37px;
+                height: 35px;
+                background-image: url(../img/footer/sprite_social.png);
+                overflow: hidden;
+            }
+            .twitter {
+                background-position: 0 0;
+                float: left;
+            }
+            .pin {
+                background-position: -44px 0;
+                float: left;
+            }
+            .fb {
+                background-position: -88px 0;
+                float: left;
+            }
+        }
+        .info_block6 {
+            width: 140px;
+            .secured {
+                background-image: url(../img/footer/secured.png);
+                background-size: 100%;
+                background-repeat: no-repeat;
+                background-position: bottom;
+                height: inherit;
+                
+            }
+        }
+        
     }
 }
