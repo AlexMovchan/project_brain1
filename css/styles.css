@@ -109,11 +109,12 @@ main {
 }
 main .base2 {
   width: 1200px;
-  height: 550px;
+  height: 580px;
   margin: auto;
+  overflow: hidden;
 }
 main .base2 .head_nav {
-  overflow: hidden;
+  height: 100px;
 }
 main .base2 .head_nav .logo {
   position: relative;
@@ -154,31 +155,64 @@ main .base2 .head_nav .block {
 }
 main .base2 .head_nav .navigation_btn {
   float: right;
-  height: 50px;
-  margin: 25px 150px;
+  margin: 25px 25px;
   position: relative;
   z-index: 10;
 }
-main .base2 .head_nav .navigation_btn .list {
-  display: block;
-  clear: both;
-  padding: 10px;
+main .base2 .head_nav .navigation_btn ul {
+  text-align: left;
+  display: inline;
+  margin: 0;
+  padding: 15px 4px 17px 0;
+  list-style: none;
 }
-main .base2 .head_nav .navigation_btn .list:hover li {
-  display: block;
-  background-color: #d1d1d1;
-  padding: 0 3px 10px;
-  text-align: center;
+main .base2 .head_nav .navigation_btn ul li {
+  font: bold 12px/18px sans-serif;
+  display: inline-block;
+  margin-right: -4px;
+  position: relative;
+  padding: 15px 20px;
+  background: #fff;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
 }
-main .base2 .head_nav .navigation_btn .list:hover li a {
-  text-decoration: none;
-  color: inherit;
+main .base2 .head_nav .navigation_btn ul li:hover {
+  background: #555;
+  color: #fff;
 }
-main .base2 .head_nav .navigation_btn .list li {
+main .base2 .head_nav .navigation_btn ul li ul {
+  padding: 0;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 100px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
   display: none;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transiton: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  -ms-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+  -transition: opacity 0.2s;
 }
-main .base2 .head_nav .navigation_btn .list .current {
+main .base2 .head_nav .navigation_btn ul li ul li {
   display: block;
+  color: black;
+}
+main .base2 .head_nav .navigation_btn ul li ul li:hover {
+  background: #666;
+}
+main .base2 .head_nav .navigation_btn ul li:hover ul {
+  display: block;
+  opacity: 1;
+  visibility: visible;
 }
 main .base2 .banner {
   background-color: #f6f3ec;
@@ -223,7 +257,6 @@ main .base2 .banner .woman_banner {
 }
 .wrap .control {
   position: absolute;
-  margin-top: 25px;
   margin-left: -50px;
   left: 50%;
   z-index: 2;
@@ -288,7 +321,7 @@ main .base2 .banner .woman_banner {
 .base_otline {
   width: 100%;
   background-color: #ededed;
-  margin: 75px auto 0;
+  margin: 35px auto 0;
 }
 .base_otline .base3 {
   width: 1200px;
@@ -550,32 +583,19 @@ main .base2 .banner .woman_banner {
   float: left;
   height: inherit;
   width: 130px;
-  background-repeat: no-repeat;
-  background-position: center center;
+  display: table;
+  padding: 0 3px;
 }
-.all_groups .group3 .second_group3 .brand1 {
-  background-image: url(../img/main/content/brand1.png);
+.all_groups .group3 .second_group3 .part_brand a {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
 }
-.all_groups .group3 .second_group3 .brand2 {
-  background-image: url(../img/main/content/brand2.png);
+.all_groups .group3 .second_group3 .part_brand a:hover {
+  transform: scale(1.1);
 }
-.all_groups .group3 .second_group3 .brand3 {
-  background-image: url(../img/main/content/brand3.png);
-}
-.all_groups .group3 .second_group3 .brand4 {
-  background-image: url(../img/main/content/brand4.png);
-}
-.all_groups .group3 .second_group3 .brand5 {
-  background-image: url(../img/main/content/brand5.png);
-}
-.all_groups .group3 .second_group3 .brand6 {
-  background-image: url(../img/main/content/brand6.png);
-}
-.all_groups .group3 .second_group3 .brand7 {
-  background-image: url(../img/main/content/brand7.png);
-}
-.all_groups .group3 .second_group3 .brand8 {
-  background-image: url(../img/main/content/brand8.png);
+.all_groups .group3 .second_group3 .part_brand a img {
+  margin: auto;
 }
 .all_groups .group4 {
   width: 1200px;
