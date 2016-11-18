@@ -319,7 +319,6 @@ main .base2 .banner .woman_banner {
 }
 /* ============content========= */
 .base_otline {
-  width: 100%;
   background-color: #ededed;
   margin: 35px auto 0;
 }
@@ -327,7 +326,7 @@ main .base2 .banner .woman_banner {
   width: 1200px;
   height: 55px;
   background-color: #ededed;
-  clear: both;
+  margin: auto;
 }
 .base_otline .base3 .left_pannel {
   width: 240px;
